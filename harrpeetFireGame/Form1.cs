@@ -63,14 +63,14 @@ namespace harrpeetFireGame
                 // enable the timer to work
                 timer1.Start();
                 // generate the sound of the  fire trigger 
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("fire.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.fire);
                 player.Play();
                 findWinner();
                
                 
             }else {
                 // generate the sound of the  empty trigger 
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("Empty.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.Empty);
                 player.Play();
                 MessageBox.Show("Retry to Shoot ");
 
@@ -127,14 +127,14 @@ namespace harrpeetFireGame
             if (bullet == sound)
             {
 
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("fire.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.fire);
                 player.Play();
                 MessageBox.Show("Thank God ! Player is alive ");
                 button6.Enabled = false;
                 button5.Visible = true;
             }
             else {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("Empty.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.Empty);
                 player.Play();
             }
 

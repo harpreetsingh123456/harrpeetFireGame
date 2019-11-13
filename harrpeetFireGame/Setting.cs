@@ -14,7 +14,7 @@ namespace harrpeetFireGame
         
         // method to generate the fire 
         public int fire() {
-            return rd.Next(1, 6);
+            return rd.Next(1, 7);
         }
 
     }
